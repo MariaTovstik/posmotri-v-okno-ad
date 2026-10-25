@@ -57,6 +57,16 @@ ol {
   margin: 133px auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 result {
   display: flex;
   flex-direction: column;
@@ -191,7 +201,7 @@ result {
   cursor: pointer;
 }
 
-.content__video-caed {
+.content__video-card {
   display: flex;
   justify-content: space-between;
   width: 399px;
@@ -262,19 +272,33 @@ result {
   outline-offset: 2px;
 }
 
+.search-form__label:active .search-form__pseudo-checkbox {
+  background-color: #fff;
+}
+
+.search-form__label:active {
+  text-decoration: none;
+}
+
 .search-form__textfield:focus,
 .search-form__textfield:focus-visible {
   outline: 1px solid #fff;
 }
 
+
 .search-form__submit-button:hover {
-  background-color: rgb(255 255 255 / 0.2); 
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.search-form__submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(255 255/0.6);
 }
 
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 4px;
+  outline-offset: 1px;
 }
 
 .content__card-link_current {
