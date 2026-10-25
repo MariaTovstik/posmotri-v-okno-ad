@@ -162,6 +162,10 @@ result {
   color: #fff;
 }
 
+.content__accent {
+  color: #545050;
+}
+
 .content__list-container {
   width: 399px;
   height: 298px;
@@ -225,4 +229,55 @@ result {
   height: 103px;
   object-fit: cover;
   object-position: center;
+}
+
+.search-form__pseudo-checkbox {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.search-form__label:hover {
+  text-decoration: underline; 
+
+}
+
+.search-form__label:hover {
+  text-decoration: underline;
+}
+
+.search-form__checkbox:focus-visible + .search-form__pseudo-checkbox {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.search-form__textfield:focus,
+.search-form__textfield:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.search-form__submit-button:hover {
+  background-color: rgb(255 255 255 / 0.2); 
+  cursor: pointer;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 4px;
+}
+
+.content__card-link_current {
+  border: 1px solid #fff;
+  pointer-events: none; 
 }
